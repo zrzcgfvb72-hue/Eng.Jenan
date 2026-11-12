@@ -1,0 +1,2039 @@
+<!DOCTYPE html>
+<html lang="en"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNDUyOTEwOTgwOTY0NDkwODE4NSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2RmZjhhMTE3ZDY1NmM2MjFfaW5kZXguaHRtbC0xMTYifSwiZXhwIjoxNzk0NDcwOTc4LCJpYXQiOjE3OTQ0NjczNzgsImFsZyI6IlJTMjU2In0.e1rPldKKEbVIy_geOtLRq2lnraUTEHF1RrlY3i8SMs_h86KrAgB9KCBXkyWUgtxzWrZTr55pKK48A4l1F9iDfMV2cgdMl4UQcdBUDsgR8Et4Fld02Li_8awfysw2C9qUsfZ8PJNPsXb5aofAds2BvMym86J89HXJ3Tmypn7IxKsWvAOSKZ4jUWup5YfYzQhHT46_nb05IWyLJR6-BSXWPmaFeymWn8EdLAUT-ycUPfWFc9zGQpf0sJaNqifTsej-dKdLUV78c7QMz6nQQ1loipNjhS9FGEDhWVnRJDhIDnxEolwl9ZH2tMnjnHZxtdh9TubUPKWD0sNGWg8mGVpXZw","c_dff8a117d656c621_index.html-116")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MGS1 CODEC 140.85 // ENG. JANAN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&amp;family=Cairo:wght@400;600;700&amp;family=Orbitron:wght@500;700;900&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --crt-bg: #020805;
+      --crt-panel: #04130c;
+      --crt-green: #4eff8f;
+      --crt-mid: #22c55e;
+      --crt-dark: #09331d;
+      --crt-alert: #ff3b3b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--crt-bg);
+      color: var(--crt-green);
+      font-family: 'Share Tech Mono', monospace;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Authentic PS1 CRT Scanlines & Phosphor Vignette */
+    .crt-scanlines {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 60;
+      background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%, 
+        rgba(0, 0, 0, 0.42) 50%
+      ), linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.025),
+        rgba(0, 255, 0, 0.015),
+        rgba(0, 0, 255, 0.025)
+      );
+      background-size: 100% 3px, 6px 100%;
+    }
+
+    .crt-vignette {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 59;
+      background: radial-gradient(circle at center, transparent 58%, rgba(0, 0, 0, 0.85) 100%);
+    }
+
+    .tactical-grid {
+      background-image: 
+        linear-gradient(to right, rgba(78, 255, 143, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(78, 255, 143, 0.05) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    .font-orbitron {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .font-arabic-poem {
+      font-family: 'Amiri', serif;
+    }
+
+    .font-arabic-ui {
+      font-family: 'Cairo', sans-serif;
+    }
+
+    .phosphor-glow {
+      text-shadow: 0 0 8px rgba(78, 255, 143, 0.75), 0 0 18px rgba(34, 197, 94, 0.35);
+    }
+
+    .alert-glow {
+      text-shadow: 0 0 10px rgba(255, 59, 59, 0.85), 0 0 22px rgba(255, 59, 59, 0.45);
+    }
+
+    /* MGS1 Pixelated Tactical Frame Borders */
+    .mgs-frame {
+      border: 2px solid var(--crt-mid);
+      box-shadow: 
+        0 0 18px rgba(34, 197, 94, 0.22),
+        inset 0 0 24px rgba(34, 197, 94, 0.09);
+      position: relative;
+    }
+
+    .mgs-frame::before, .mgs-frame::after {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-color: var(--crt-green);
+      border-style: solid;
+      pointer-events: none;
+    }
+
+    .mgs-frame::before {
+      top: -3px;
+      left: -3px;
+      border-width: 3px 0 0 3px;
+    }
+
+    .mgs-frame::after {
+      bottom: -3px;
+      right: -3px;
+      border-width: 0 3px 3px 0;
+    }
+
+    /* Monochrome MGS1 Green Phosphor Filter for Uploaded Portraits */
+    .mgs-green-filter {
+      filter: grayscale(100%) contrast(145%) brightness(95%) sepia(100%) hue-rotate(85deg) saturate(420%);
+    }
+
+    /* Animations */
+    @keyframes pulseBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+
+    @keyframes scanSweep {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(420%); }
+    }
+
+    @keyframes mouthSpeak {
+      0%, 100% { transform: scaleY(0.22); }
+      50% { transform: scaleY(1.1); }
+    }
+
+    @keyframes bandanaFlutter {
+      0%, 100% { transform: skewY(0deg) translateX(0px); }
+      50% { transform: skewY(-3deg) translateX(-2px); }
+    }
+
+    .animate-blink {
+      animation: pulseBlink 1s infinite ease-in-out;
+    }
+
+    .animate-blink-fast {
+      animation: pulseBlink 0.5s infinite ease-in-out;
+    }
+
+    .portrait-crt::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 20%;
+      background: linear-gradient(to bottom, transparent, rgba(78, 255, 143, 0.26), transparent);
+      animation: scanSweep 2.8s linear infinite;
+      pointer-events: none;
+    }
+
+    .snake-talking #snakeMouthAnim {
+      transform-origin: center;
+      animation: mouthSpeak 0.15s infinite ease-in-out;
+    }
+
+    .bandana-tail {
+      transform-origin: right center;
+      animation: bandanaFlutter 2.2s infinite ease-in-out;
+    }
+
+    .btn-mgs {
+      background: linear-gradient(180deg, rgba(34, 197, 94, 0.26) 0%, rgba(4, 19, 12, 0.95) 100%);
+      border: 1.5px solid var(--crt-green);
+      box-shadow: 0 0 16px rgba(78, 255, 143, 0.3);
+      transition: all 0.18s ease;
+    }
+
+    .btn-mgs:hover {
+      background: rgba(78, 255, 143, 0.28);
+      box-shadow: 0 0 26px rgba(78, 255, 143, 0.65);
+      transform: translateY(-1px);
+    }
+
+    .btn-mgs:active {
+      transform: scale(0.98);
+    }
+
+    .signal-bar {
+      transition: height 0.08s ease, background-color 0.15s ease;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-1{bottom:0.25rem}.bottom-5{bottom:1.25rem}.left-1\.5{left:0.375rem}.right-1\.5{right:0.375rem}.right-5{right:1.25rem}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-2\.5{margin-bottom:0.625rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mt-0\.5{margin-top:0.125rem}.mt-2{margin-top:0.5rem}.mt-2\.5{margin-top:0.625rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-2\.5{height:0.625rem}.h-44{height:11rem}.h-9{height:2.25rem}.h-full{height:100%}.max-h-\[92vh\]{max-height:92vh}.min-h-\[145px\]{min-height:145px}.min-h-screen{min-height:100vh}.w-12{width:3rem}.w-2{width:0.5rem}.w-2\.5{width:0.625rem}.w-40{width:10rem}.w-9{width:2.25rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}@keyframes ping{75%, 100%{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.whitespace-pre-line{white-space:pre-line}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-t{border-top-left-radius:0.25rem;border-top-right-radius:0.25rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-\[\#09331d\]{--tw-border-opacity:1;border-color:rgb(9 51 29 / var(--tw-border-opacity, 1))}.border-\[\#22c55e\]{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.border-\[\#22c55e\]\/40{border-color:rgb(34 197 94 / 0.4)}.border-\[\#22c55e\]\/60{border-color:rgb(34 197 94 / 0.6)}.border-\[\#22c55e\]\/70{border-color:rgb(34 197 94 / 0.7)}.border-\[\#4eff8f\]{--tw-border-opacity:1;border-color:rgb(78 255 143 / var(--tw-border-opacity, 1))}.border-\[\#4eff8f\]\/40{border-color:rgb(78 255 143 / 0.4)}.border-\[\#4eff8f\]\/50{border-color:rgb(78 255 143 / 0.5)}.border-\[\#4eff8f\]\/60{border-color:rgb(78 255 143 / 0.6)}.border-\[\#ff3b3b\]{--tw-border-opacity:1;border-color:rgb(255 59 59 / var(--tw-border-opacity, 1))}.border-\[\#ff3b3b\]\/70{border-color:rgb(255 59 59 / 0.7)}.bg-\[\#020805\]{--tw-bg-opacity:1;background-color:rgb(2 8 5 / var(--tw-bg-opacity, 1))}.bg-\[\#020805\]\/90{background-color:rgb(2 8 5 / 0.9)}.bg-\[\#020805\]\/95{background-color:rgb(2 8 5 / 0.95)}.bg-\[\#04130c\]{--tw-bg-opacity:1;background-color:rgb(4 19 12 / var(--tw-bg-opacity, 1))}.bg-\[\#04130c\]\/95{background-color:rgb(4 19 12 / 0.95)}.bg-\[\#09331d\]{--tw-bg-opacity:1;background-color:rgb(9 51 29 / var(--tw-bg-opacity, 1))}.bg-\[\#09331d\]\/80{background-color:rgb(9 51 29 / 0.8)}.bg-\[\#22c55e\]{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-\[\#4eff8f\]{--tw-bg-opacity:1;background-color:rgb(78 255 143 / var(--tw-bg-opacity, 1))}.bg-\[\#4eff8f\]\/10{background-color:rgb(78 255 143 / 0.1)}.bg-\[\#4eff8f\]\/15{background-color:rgb(78 255 143 / 0.15)}.bg-\[\#4eff8f\]\/20{background-color:rgb(78 255 143 / 0.2)}.bg-\[\#ff3b3b\]\/10{background-color:rgb(255 59 59 / 0.1)}.bg-\[\#ff3b3b\]\/20{background-color:rgb(255 59 59 / 0.2)}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-black\/85{background-color:rgb(0 0 0 / 0.85)}.object-cover{object-fit:cover}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-2{padding-bottom:0.5rem}.pb-3{padding-bottom:0.75rem}.pt-1{padding-top:0.25rem}.pt-2\.5{padding-top:0.625rem}.pt-3{padding-top:0.75rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-\[2\.25\]{line-height:2.25}.leading-relaxed{line-height:1.625}.tracking-\[0\.16em\]{letter-spacing:0.16em}.tracking-\[0\.18em\]{letter-spacing:0.18em}.tracking-\[0\.25em\]{letter-spacing:0.25em}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-\[\#22c55e\]{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-\[\#4eff8f\]{--tw-text-opacity:1;color:rgb(78 255 143 / var(--tw-text-opacity, 1))}.text-\[\#ff3b3b\]{--tw-text-opacity:1;color:rgb(255 59 59 / var(--tw-text-opacity, 1))}.text-emerald-100\/95{color:rgb(209 250 229 / 0.95)}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.opacity-40{opacity:0.4}.shadow-\[0_0_12px_rgba\(78\2c 255\2c 143\2c 0\.25\)\]{--tw-shadow:0 0 12px rgba(78,255,143,0.25);--tw-shadow-colored:0 0 12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_20px_rgba\(78\2c 255\2c 143\2c 0\.45\)\]{--tw-shadow:0 0 20px rgba(78,255,143,0.45);--tw-shadow-colored:0 0 20px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_22px_rgba\(78\2c 255\2c 143\2c 0\.25\)\]{--tw-shadow:0 0 22px rgba(78,255,143,0.25);--tw-shadow-colored:0 0 22px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_8px_\#4eff8f\]{--tw-shadow:0 0 8px #4eff8f;--tw-shadow-colored:0 0 8px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-500{transition-duration:500ms}.hover\:bg-\[\#09331d\]:hover{--tw-bg-opacity:1;background-color:rgb(9 51 29 / var(--tw-bg-opacity, 1))}.hover\:bg-\[\#22c55e\]\/30:hover{background-color:rgb(34 197 94 / 0.3)}.hover\:bg-\[\#ff3b3b\]\/15:hover{background-color:rgb(255 59 59 / 0.15)}.hover\:bg-\[\#ff3b3b\]\/20:hover{background-color:rgb(255 59 59 / 0.2)}.hover\:text-\[\#4eff8f\]:hover{--tw-text-opacity:1;color:rgb(78 255 143 / var(--tw-text-opacity, 1))}.focus\:border-\[\#4eff8f\]:focus{--tw-border-opacity:1;border-color:rgb(78 255 143 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:h-48{height:12rem}.sm\:w-44{width:11rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:justify-start{justify-content:flex-start}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:p-7{padding:1.75rem}.sm\:p-8{padding:2rem}.sm\:text-left{text-align:left}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}.sm\:text-xs{font-size:0.75rem;line-height:1rem}.sm\:leading-\[2\.45\]{line-height:2.45}}@media (min-width: 768px){.md\:col-span-4{grid-column:span 4 / span 4}.md\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}}</style></head>
+<body class="tactical-grid flex flex-col items-center justify-between min-h-screen p-3 sm:p-5">
+
+  <!-- CRT Visual Overlays -->
+  <div class="crt-scanlines"></div>
+  <div class="crt-vignette"></div>
+
+  <!-- Background Radar Canvas -->
+  <canvas id="radarCanvas" class="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-40" width="1180" height="705"></canvas>
+
+  <!-- TOP TACTICAL HUD BAR -->
+  <header class="w-full max-w-4xl z-20 flex flex-wrap items-center justify-between gap-2 border-b border-[#09331d] pb-3 text-xs sm:text-sm">
+    <div class="flex items-center gap-2.5">
+      <span class="inline-block w-2.5 h-2.5 rounded-full bg-[#4eff8f] animate-blink shadow-[0_0_8px_#4eff8f]"></span>
+      <span class="font-orbitron tracking-wider text-[#4eff8f] font-bold">FOXHOUND // CODEC OS 1998</span>
+    </div>
+
+    <div class="flex flex-wrap items-center gap-2">
+      <span id="statusBadge" class="px-2.5 py-1 rounded bg-[#4eff8f]/20 border border-[#4eff8f] text-[#4eff8f] text-[11px] font-bold tracking-widest">LINK ACTIVE</span>
+      <button id="audioToggleBtn" onclick="toggleAudio()" class="px-3 py-1 rounded border border-[#22c55e] bg-[#04130c] hover:bg-[#09331d] text-[#4eff8f] text-xs flex items-center gap-1.5 cursor-pointer transition">
+        <span id="audioIcon">🔇</span>
+        <span id="audioLabel">AUDIO: OFF</span>
+      </button>
+      <button onclick="openEditModal()" class="px-3 py-1 rounded border border-[#4eff8f] bg-[#09331d]/80 hover:bg-[#22c55e]/30 text-[#4eff8f] text-xs font-bold tracking-wider flex items-center gap-1.5 cursor-pointer transition shadow-[0_0_12px_rgba(78,255,143,0.25)]">
+        <span>⚙</span>
+        <span>EDIT / SAVE</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN INTERACTIVE STAGE -->
+  <main class="w-full max-w-4xl z-10 my-auto py-4">
+
+    <!-- ===================================================================== -->
+    <!-- STAGE 1: CLASSIFIED LOCK SCREEN                                       -->
+    <!-- ===================================================================== -->
+    <section id="classifiedScreen" class="mgs-frame bg-[#04130c]/95 backdrop-blur-md rounded-lg p-5 sm:p-8 text-center relative overflow-hidden">
+      
+      <!-- Flashing Top Secret Banner -->
+      <div class="border border-[#ff3b3b]/70 bg-[#ff3b3b]/10 rounded py-2 px-3 mb-6 flex items-center justify-center gap-3">
+        <span class="text-[#ff3b3b] text-base animate-blink-fast">⚠</span>
+        <span class="font-orbitron text-xs sm:text-sm tracking-[0.2em] text-[#ff3b3b] font-bold alert-glow">
+          TOP SECRET // CLASSIFIED DOSSIER
+        </span>
+        <span class="text-[#ff3b3b] text-base animate-blink-fast">⚠</span>
+      </div>
+
+      <!-- Target Dossier Box -->
+      <div class="max-w-lg mx-auto bg-[#020805]/90 border border-[#22c55e]/70 rounded-lg p-5 mb-6 text-left">
+        <div class="flex items-center justify-between border-b border-[#09331d] pb-3 mb-4">
+          <div>
+            <p class="text-[11px] text-[#22c55e] tracking-widest">TARGET OPERATIVE ID</p>
+            <h1 id="lockAgentName" class="font-orbitron text-xl sm:text-2xl font-black text-[#4eff8f] phosphor-glow mt-0.5 uppercase">ENG. JANAN</h1>
+          </div>
+          <div class="w-12 h-12 rounded border border-[#4eff8f]/60 bg-[#04130c] flex items-center justify-center">
+            <svg viewBox="0 0 64 64" class="w-9 h-9 text-[#4eff8f]" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="32" cy="32" r="25" stroke-dasharray="4 3" opacity="0.6"></circle>
+              <polygon points="32,12 37,25 51,25 40,33 44,47 32,39 20,47 24,33 13,25 27,25" fill="#4eff8f" fill-opacity="0.15"></polygon>
+            </svg>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 text-xs sm:text-sm">
+          <div class="bg-[#04130c] p-2.5 rounded border border-[#09331d]">
+            <span class="block text-[10px] text-[#22c55e]">CODEC FREQUENCY</span>
+            <span id="lockFreqDisplay" class="font-bold text-[#4eff8f]">140.85 MHz</span>
+          </div>
+          <div class="bg-[#04130c] p-2.5 rounded border border-[#09331d]">
+            <span class="block text-[10px] text-[#22c55e]">CALLER ID</span>
+            <span class="font-bold text-[#4eff8f]">SOLID SNAKE</span>
+          </div>
+          <div class="bg-[#04130c] p-2.5 rounded border border-[#09331d]">
+            <span class="block text-[10px] text-[#22c55e]">MISSION PRIORITY</span>
+            <span class="font-bold text-[#4eff8f]">SPECIAL BIRTHDAY OP</span>
+          </div>
+          <div class="bg-[#04130c] p-2.5 rounded border border-[#09331d]">
+            <span class="block text-[10px] text-[#22c55e]">CONNECTION</span>
+            <span class="font-bold text-[#ff3b3b] animate-blink">INCOMING CALL...</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Incoming Transmission Alert -->
+      <div class="mb-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded bg-[#4eff8f]/10 border border-[#4eff8f]/50 mb-3">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#4eff8f] animate-ping"></span>
+          <span class="font-orbitron text-xs sm:text-sm tracking-[0.2em] text-[#4eff8f] font-bold">
+            INCOMING TRANSMISSION
+          </span>
+        </div>
+        <p class="text-xs sm:text-sm text-[#22c55e] max-w-md mx-auto">
+          Encrypted tactical transmission from <span class="text-[#4eff8f] font-bold">SOLID SNAKE</span> on frequency <span id="lockFreqSub" class="text-[#4eff8f] font-bold">140.85 MHz</span>.
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button onclick="ringCodecPreview()" class="px-5 py-3 rounded border border-[#22c55e] bg-[#020805] hover:bg-[#09331d] text-[#4eff8f] text-xs sm:text-sm tracking-widest cursor-pointer transition">
+          📡 TEST CODEC RING
+        </button>
+
+        <button onclick="acceptTransmission()" class="btn-mgs px-8 py-4 rounded font-orbitron text-sm sm:text-base font-black tracking-[0.16em] text-[#4eff8f] phosphor-glow cursor-pointer flex items-center gap-3">
+          <span>[ ACCEPT TRANSMISSION ]</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- STAGE 2: MGS1 PS1 CODEC INTERFACE & DECRYPTED BIRTHDAY ARCHIVE        -->
+    <!-- ===================================================================== -->
+    <section id="codecScreen" class="space-y-5 hidden">
+      
+      <!-- Authentic PS1 Codec Window -->
+      <div class="mgs-frame bg-[#04130c]/95 backdrop-blur-md rounded-lg p-4 sm:p-6">
+        
+        <!-- Top Codec Telemetry Bar -->
+        <div class="flex items-center justify-between border-b border-[#09331d] pb-2 mb-4 text-[11px] sm:text-xs">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-[#4eff8f]/20 text-[#4eff8f] font-bold">PTT // CONNECTED</span>
+            <span class="text-[#22c55e] hidden sm:inline">CODEC SECURE LINE</span>
+          </div>
+          <div class="font-orbitron text-[#4eff8f] font-bold tracking-widest">
+            FREQ: <span id="hudFreqTop">140.85</span> MHz
+          </div>
+        </div>
+
+        <!-- Dual Portraits + Center PS1 Frequency & Signal Bars -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center mb-5">
+          
+          <!-- LEFT PORTRAIT: SOLID SNAKE (MONOCHROME PHOSPHOR GREEN) -->
+          <div class="md:col-span-4 flex flex-col items-center">
+            <div id="snakePortraitWrapper" class="w-40 h-44 sm:w-44 sm:h-48 rounded border-2 border-[#4eff8f] bg-[#020805] relative overflow-hidden portrait-crt shadow-[0_0_22px_rgba(78,255,143,0.25)]">
+              
+              <!-- Default Detailed Solid Snake MGS1 Phosphor Green Vector Portrait -->
+              <svg id="defaultSnakeSvg" viewBox="0 0 180 200" class="w-full h-full">
+                <defs>
+                  <linearGradient id="crtSuit" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#22c55e" stop-opacity="0.45"></stop>
+                    <stop offset="100%" stop-color="#020805" stop-opacity="0.98"></stop>
+                  </linearGradient>
+                  <linearGradient id="crtSkin" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#166534"></stop>
+                    <stop offset="50%" stop-color="#0d3b20"></stop>
+                    <stop offset="100%" stop-color="#051c0f"></stop>
+                  </linearGradient>
+                </defs>
+
+                <!-- CRT Phosphor Background & Grid -->
+                <rect width="180" height="200" fill="#020b06"></rect>
+                <g stroke="#0b3b21" stroke-width="0.7" opacity="0.65">
+                  <path d="M0 25 H180 M0 50 H180 M0 75 H180 M0 100 H180 M0 125 H180 M0 150 H180 M0 175 H180"></path>
+                  <path d="M30 0 V200 M60 0 V200 M90 0 V200 M120 0 V200 M150 0 V200"></path>
+                </g>
+
+                <!-- Flowing Bandana Tails (Left Side) -->
+                <g class="bandana-tail">
+                  <path d="M56 64 Q30 56 12 72 Q28 73 56 71 Z" fill="#22c55e" opacity="0.85"></path>
+                  <path d="M56 69 Q24 74 8 92 Q29 86 56 75 Z" fill="#4eff8f" opacity="0.65"></path>
+                </g>
+
+                <!-- Sneaking Suit Shoulders & Tactical Collar -->
+                <path d="M18 200 C24 156, 48 144, 90 144 C132 144, 156 156, 162 200 Z" fill="url(#crtSuit)" stroke="#4eff8f" stroke-width="2"></path>
+                <!-- Collar & Chest Harness -->
+                <path d="M58 145 L74 176 L90 164 L106 176 L122 145" fill="none" stroke="#4eff8f" stroke-width="2"></path>
+                <path d="M50 152 L58 200 M130 152 L122 200" stroke="#22c55e" stroke-width="3" opacity="0.7"></path>
+                <rect x="44" y="168" width="12" height="18" rx="2" fill="#04130c" stroke="#4eff8f" stroke-width="1.5"></rect>
+
+                <!-- Neck with Shadow Shading -->
+                <path d="M72 126 L70 148 L110 148 L108 126 Z" fill="#072615" stroke="#22c55e" stroke-width="1.5"></path>
+                <path d="M80 130 L84 146 M100 130 L96 146" stroke="#22c55e" stroke-width="1.2" opacity="0.6"></path>
+
+                <!-- Solid Snake Mullet / Hair Back Layer -->
+                <path d="M52 68 C46 86, 46 114, 54 132 L62 124 L60 80 Z" fill="#072615" stroke="#22c55e" stroke-width="1.5"></path>
+                <path d="M128 68 C134 86, 134 114, 126 132 L118 124 L120 80 Z" fill="#072615" stroke="#22c55e" stroke-width="1.5"></path>
+
+                <!-- Face & Strong Jawline -->
+                <path d="M58 68 L58 102 C58 118, 72 132, 90 134 C108 132, 122 118, 122 102 L122 68 Z" fill="url(#crtSkin)" stroke="#4eff8f" stroke-width="2"></path>
+
+                <!-- Facial Stubble / Shadow Texture -->
+                <path d="M62 104 C64 118, 75 129, 90 130 C105 129, 116 118, 118 104 C112 112, 102 114, 90 114 C78 114, 68 112, 62 104 Z" fill="#03140b" opacity="0.75"></path>
+
+                <!-- Iconic Bandana Across Forehead -->
+                <rect x="54" y="57" width="72" height="14" rx="2" fill="#22c55e" stroke="#4eff8f" stroke-width="1.8"></rect>
+                <line x1="56" y1="62" x2="124" y2="62" stroke="#04130c" stroke-width="1.2" opacity="0.65"></line>
+                <line x1="56" y1="67" x2="124" y2="67" stroke="#4eff8f" stroke-width="1" opacity="0.7"></line>
+
+                <!-- Messy Spiky Hair Fringe Over Bandana -->
+                <path d="M54 58 C56 36, 72 28, 90 28 C108 28, 124 36, 126 58 L116 52 L108 59 L98 49 L90 59 L80 48 L70 59 L62 51 Z" fill="#09331d" stroke="#4eff8f" stroke-width="1.8"></path>
+
+                <!-- Sharp Serious Eyebrows & Piercing CRT Green Eyes -->
+                <path d="M64 78 L82 82 L82 85 L64 81 Z" fill="#4eff8f"></path>
+                <path d="M116 78 L98 82 L98 85 L116 81 Z" fill="#4eff8f"></path>
+                <!-- Eyes -->
+                <polygon points="67,84 81,86 79,90 68,89" fill="#4eff8f"></polygon>
+                <polygon points="113,84 99,86 101,90 112,89" fill="#4eff8f"></polygon>
+                <circle cx="74" cy="87" r="1.5" fill="#020805"></circle>
+                <circle cx="106" cy="87" r="1.5" fill="#020805"></circle>
+
+                <!-- Nose Bridge & Shadow -->
+                <path d="M90 83 L87 101 L93 102" fill="none" stroke="#4eff8f" stroke-width="1.8"></path>
+
+                <!-- Codec Earpiece & Boom Mic -->
+                <rect x="120" y="84" width="7" height="16" rx="2" fill="#4eff8f"></rect>
+                <path d="M124 98 Q126 114 103 118" fill="none" stroke="#4eff8f" stroke-width="2"></path>
+                <circle cx="101" cy="118" r="3" fill="#4eff8f"></circle>
+
+                <!-- Animated Speaking Mouth -->
+                <g id="snakeMouthAnim">
+                  <rect x="78" y="114" width="24" height="5" rx="2" fill="#4eff8f"></rect>
+                  <line x1="80" y1="116.5" x2="100" y2="116.5" stroke="#020805" stroke-width="1.2"></line>
+                </g>
+              </svg>
+
+              <!-- Custom Uploaded Snake Image (Hidden by default unless uploaded in Edit Mode) -->
+              <img id="customSnakeImg" src="" alt="Speaker Portrait" class="hidden w-full h-full object-cover mgs-green-filter">
+
+              <div class="absolute bottom-1 left-1.5 right-1.5 flex justify-between text-[9px] text-[#4eff8f] bg-black/80 px-1.5 py-0.5 rounded border border-[#22c55e]/40">
+                <span>SOLID SNAKE</span>
+                <span>TX</span>
+              </div>
+            </div>
+            <span class="mt-2 font-orbitron text-xs font-bold tracking-wider text-[#4eff8f]">SOLID SNAKE</span>
+          </div>
+
+          <!-- CENTER FREQUENCY & MGS1 SIGNAL METER -->
+          <div class="md:col-span-4 flex flex-col items-center justify-center bg-[#020805] border-2 border-[#22c55e] rounded-lg p-4">
+            <div class="text-[10px] tracking-[0.25em] text-[#22c55e] mb-1">MEMORY FREQUENCY</div>
+            <div id="hudFreqCenter" class="font-orbitron text-3xl sm:text-4xl font-black text-[#4eff8f] phosphor-glow tracking-wider mb-3">140.85</div>
+
+            <!-- Classic MGS1 Green Signal Bars -->
+            <div id="signalBarsBox" class="w-full h-16 flex items-end justify-center gap-1.5 px-3 py-2 bg-[#04130c] rounded border border-[#09331d]">
+              <div class="signal-bar w-2.5 bg-[#4eff8f] rounded-t" style="height: 10%;"></div>
+              <div class="signal-bar w-2.5 bg-[#4eff8f] rounded-t" style="height: 10%;"></div>
+              <div class="signal-bar w-2.5 bg-[#4eff8f] rounded-t" style="height: 10%;"></div>
+              <div class="signal-bar w-2.5 bg-[#22c55e] rounded-t" style="height: 10%;"></div>
+              <div class="signal-bar w-2.5 bg-[#4eff8f] rounded-t" style="height: 10%;"></div>
+              <div class="signal-bar w-2.5 bg-[#4eff8f] rounded-t" style="height: 10%;"></div>
+              <div class="signal-bar w-2.5 bg-[#22c55e] rounded-t" style="height: 10%;"></div>
+              <div class="signal-bar w-2.5 bg-[#4eff8f] rounded-t" style="height: 10%;"></div>
+              <div class="signal-bar w-2.5 bg-[#4eff8f] rounded-t" style="height: 10%;"></div>
+              <div class="signal-bar w-2.5 bg-[#4eff8f] rounded-t" style="height: 10%;"></div>
+            </div>
+
+            <div class="w-full flex items-center justify-between text-[10px] text-[#22c55e] mt-2.5">
+              <span>PTT LINK: 100%</span>
+              <span class="text-[#4eff8f]">SYNTH: ON</span>
+            </div>
+          </div>
+
+          <!-- RIGHT PORTRAIT: AGENT ENG. JANAN -->
+          <div class="md:col-span-4 flex flex-col items-center">
+            <div class="w-40 h-44 sm:w-44 sm:h-48 rounded border-2 border-[#4eff8f] bg-[#020805] relative overflow-hidden portrait-crt shadow-[0_0_22px_rgba(78,255,143,0.25)]">
+              
+              <!-- Default Engineering & Tactical Silhouette Emblem for Eng. Janan -->
+              <svg id="defaultJananSvg" viewBox="0 0 180 200" class="w-full h-full">
+                <rect width="180" height="200" fill="#020b06"></rect>
+                <g stroke="#0b3b21" stroke-width="0.7" opacity="0.65">
+                  <path d="M0 25 H180 M0 50 H180 M0 75 H180 M0 100 H180 M0 125 H180 M0 150 H180 M0 175 H180"></path>
+                  <path d="M30 0 V200 M60 0 V200 M90 0 V200 M120 0 V200 M150 0 V200"></path>
+                </g>
+
+                <!-- Tactical Radar Rings & Engineering Gear -->
+                <circle cx="90" cy="88" r="62" fill="none" stroke="#22c55e" stroke-width="1" stroke-dasharray="5 4"></circle>
+                <circle cx="90" cy="88" r="46" fill="none" stroke="#4eff8f" stroke-width="1.4" opacity="0.8"></circle>
+
+                <!-- Circuit Lines -->
+                <path d="M28 88 H44 M136 88 H152 M90 26 V42 M90 134 V150" stroke="#4eff8f" stroke-width="1.5"></path>
+
+                <!-- Tactical Operative Silhouette + Crown/Star -->
+                <g transform="translate(90, 86)" stroke="#4eff8f" fill="none" stroke-width="2">
+                  <polygon points="0,-30 9,-10 30,-10 13,4 19,25 0,13 -19,25 -13,4 -30,-10 -9,-10" fill="#4eff8f" fill-opacity="0.18"></polygon>
+                  <circle cx="0" cy="0" r="10" fill="#04130c" stroke="#4eff8f" stroke-width="2"></circle>
+                </g>
+
+                <!-- Operative Name Plate -->
+                <rect x="22" y="144" width="136" height="24" rx="3" fill="#04130c" stroke="#4eff8f" stroke-width="1.4"></rect>
+                <text id="svgJananLabel" x="90" y="160" text-anchor="middle" fill="#4eff8f" font-family="Orbitron, sans-serif" font-size="11" font-weight="bold">ENG. JANAN</text>
+              </svg>
+
+              <!-- Custom Uploaded Janan Image (Hidden by default unless uploaded in Edit Mode) -->
+              <img id="customJananImg" src="" alt="Receiver Portrait" class="hidden w-full h-full object-cover mgs-green-filter">
+
+              <div class="absolute bottom-1 left-1.5 right-1.5 flex justify-between text-[9px] text-[#4eff8f] bg-black/80 px-1.5 py-0.5 rounded border border-[#22c55e]/40">
+                <span>AGENT</span>
+                <span>RX</span>
+              </div>
+            </div>
+            <span id="hudJananName" class="mt-2 font-orbitron text-xs font-bold tracking-wider text-[#4eff8f] uppercase">ENG. JANAN</span>
+          </div>
+        </div>
+
+        <!-- MGS1 Codec Subtitle Dialogue Box -->
+        <div class="bg-[#020805] border-2 border-[#22c55e] rounded-lg p-4 sm:p-5 min-h-[145px] flex flex-col justify-between relative">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-orbitron font-bold text-[#4eff8f] tracking-wider">
+                [SOLID SNAKE // CODEC VOICE]
+              </span>
+              <span id="dialogueStepIndicator" class="text-xs text-[#22c55e] font-bold">STEP 3 / 3</span>
+            </div>
+            <p id="codecDialogueText" class="text-base sm:text-xl leading-relaxed text-[#4eff8f] phosphor-glow whitespace-pre-line font-arabic-ui">Mission accomplished! Check the decrypted birthday archive &amp; Al-Mutanabbi's tribute unlocked below.</p>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-2 mt-4 pt-3 border-t border-[#09331d]">
+            <button onclick="replayTransmission()" class="text-xs text-[#22c55e] hover:text-[#4eff8f] underline cursor-pointer">
+              ↻ REPLAY FROM START
+            </button>
+            <div class="flex items-center gap-2">
+              <button id="nextDialogueBtn" onclick="nextDialogueStep()" class="btn-mgs px-5 py-2 rounded text-[#4eff8f] text-xs sm:text-sm font-orbitron font-bold tracking-wider cursor-pointer">START OVER ↺</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- DECRYPTED MISSION REWARD: ENGLISH WISHES & AL-MUTANABBI POEM          -->
+      <!-- ===================================================================== -->
+      <div id="missionRewardCard" class="mgs-frame bg-[#04130c]/95 backdrop-blur-md rounded-lg p-5 sm:p-7 transition-all duration-500">
+        
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#09331d] pb-3 mb-5">
+          <div class="flex items-center gap-2">
+            <span class="text-[#4eff8f] text-base">★</span>
+            <h2 class="font-orbitron text-xs sm:text-sm font-bold tracking-[0.18em] text-[#4eff8f]">
+              DECRYPTED MISSION REWARD // SPECIAL ARCHIVE
+            </h2>
+          </div>
+          <span class="text-[11px] px-2.5 py-0.5 rounded bg-[#4eff8f]/15 border border-[#4eff8f]/50 text-[#4eff8f]">
+            FILE UNLOCKED
+          </span>
+        </div>
+
+        <!-- English Birthday Wishes Section -->
+        <div class="bg-[#020805]/90 border border-[#22c55e]/60 rounded-lg p-5 mb-5 text-center sm:text-left">
+          <div class="flex items-center justify-center sm:justify-start gap-2 mb-2.5">
+            <span class="w-2 h-2 rounded-full bg-[#4eff8f]"></span>
+            <h3 id="englishCardTitle" class="font-orbitron text-sm sm:text-base font-bold text-[#4eff8f] tracking-wider uppercase">HAPPY BIRTHDAY, ENG. JANAN! 🎂✨</h3>
+          </div>
+          <p id="englishCardBody" class="text-sm sm:text-base text-emerald-100/95 leading-relaxed font-sans whitespace-pre-line">Wishing you an extraordinary birthday filled with joy, inspiration, and unstoppable success!
+May every project you engineer and every dream you pursue turn into a brilliant triumph.
+Here is to another year of brilliance, strength, and unforgettable victories!</p>
+        </div>
+
+        <!-- Al-Mutanabbi Poetry Card (Arabic RTL) -->
+        <div dir="rtl" class="bg-[#020805]/95 border border-[#4eff8f]/50 rounded-lg p-5 sm:p-7 text-center relative overflow-hidden">
+          <div class="inline-block px-3.5 py-1 rounded-full bg-[#4eff8f]/10 border border-[#4eff8f]/40 text-[#4eff8f] font-arabic-ui text-xs sm:text-sm font-semibold mb-4">
+            هدية خاصة — أبيات المتنبي
+          </div>
+
+          <div id="arabicPoemDisplay" class="font-arabic-poem text-xl sm:text-3xl leading-[2.25] sm:leading-[2.45] text-[#4eff8f] phosphor-glow whitespace-pre-line">بَقِيتِ بَقَاءَ الدَّهْرِ يَا كَهْفَ أَهْلِهَا
+وَهَذَا دُعَاءٌ لِلْبَرِيَّةِ شَامِلُ
+فَمَا تَبْلُغُ الأَيَّامُ مِنْكِ نِهَايَةً
+وَحُسْنُكِ فِي كُلِّ الفُصُولِ أَوَائِلُ</div>
+
+          <div class="mt-6 pt-4 border-t border-[#09331d] flex flex-wrap items-center justify-between gap-3" dir="ltr">
+            <span class="text-xs text-[#22c55e]">MISSION OBJECTIVE: CELEBRATE &amp; ENJOY</span>
+            <button onclick="triggerCelebrationBurst()" class="btn-mgs px-5 py-2.5 rounded font-orbitron text-xs font-bold tracking-widest text-[#4eff8f] cursor-pointer">
+              🎉 LAUNCH CELEBRATION PULSE
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full max-w-4xl z-10 border-t border-[#09331d] pt-2.5 text-center text-[11px] text-[#22c55e] flex flex-col sm:flex-row items-center justify-between gap-1">
+    <span>MGS1 TACTICAL CODEC // CUSTOMIZABLE EDITION</span>
+    <span>CLICK [EDIT / SAVE] TOP RIGHT TO CUSTOMIZE &amp; DOWNLOAD HTML</span>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- EDIT & SAVE / EXPORT MODAL DRAWER                                     -->
+  <!-- ===================================================================== -->
+  <div id="editModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-3 sm:p-5 overflow-y-auto hidden">
+    <div class="mgs-frame bg-[#04130c] w-full max-w-2xl rounded-lg p-5 sm:p-6 max-h-[92vh] overflow-y-auto text-left">
+      
+      <div class="flex items-center justify-between border-b border-[#09331d] pb-3 mb-4">
+        <div>
+          <h2 class="font-orbitron text-base sm:text-lg font-bold text-[#4eff8f] phosphor-glow">
+            ⚙ CODEC STUDIO // EDIT &amp; EXPORT CARD
+          </h2>
+          <p class="text-xs text-[#22c55e]">Customize any message or portrait, then save or download as a standalone HTML file.</p>
+        </div>
+        <button onclick="closeEditModal()" class="px-3 py-1 rounded border border-[#ff3b3b] text-[#ff3b3b] hover:bg-[#ff3b3b]/20 text-xs font-bold cursor-pointer">
+          ✕ CLOSE
+        </button>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm">
+        
+        <!-- Row 1: Agent Name & Frequency -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-[#22c55e] mb-1 font-bold">AGENT / FRIEND NAME</label>
+            <input id="editAgentName" type="text" class="w-full bg-[#020805] border border-[#22c55e] rounded px-3 py-2 text-[#4eff8f] focus:outline-none focus:border-[#4eff8f]">
+          </div>
+          <div>
+            <label class="block text-[#22c55e] mb-1 font-bold">CODEC FREQUENCY (MHz)</label>
+            <input id="editFrequency" type="text" class="w-full bg-[#020805] border border-[#22c55e] rounded px-3 py-2 text-[#4eff8f] focus:outline-none focus:border-[#4eff8f]">
+          </div>
+        </div>
+
+        <!-- Step 1 Dialogue -->
+        <div>
+          <label class="block text-[#22c55e] mb-1 font-bold">STEP 1 DIALOGUE (SNAKE OPENING)</label>
+          <textarea id="editStep1" rows="2" class="w-full bg-[#020805] border border-[#22c55e] rounded px-3 py-2 text-[#4eff8f] focus:outline-none focus:border-[#4eff8f]"></textarea>
+        </div>
+
+        <!-- Step 2 Dialogue -->
+        <div>
+          <label class="block text-[#22c55e] mb-1 font-bold">STEP 2 DIALOGUE (SPECIAL BIRTHDAY LINE)</label>
+          <textarea id="editStep2" rows="3" dir="auto" class="w-full bg-[#020805] border border-[#22c55e] rounded px-3 py-2 text-[#4eff8f] font-arabic-ui focus:outline-none focus:border-[#4eff8f]"></textarea>
+        </div>
+
+        <!-- Step 3 Dialogue -->
+        <div>
+          <label class="block text-[#22c55e] mb-1 font-bold">STEP 3 DIALOGUE (MISSION COMPLETE LINE)</label>
+          <textarea id="editStep3" rows="2" class="w-full bg-[#020805] border border-[#22c55e] rounded px-3 py-2 text-[#4eff8f] focus:outline-none focus:border-[#4eff8f]"></textarea>
+        </div>
+
+        <!-- English Birthday Card Paragraph -->
+        <div>
+          <label class="block text-[#22c55e] mb-1 font-bold">ENGLISH BIRTHDAY MESSAGE (ARCHIVE CARD)</label>
+          <textarea id="editEnglishBody" rows="3" class="w-full bg-[#020805] border border-[#22c55e] rounded px-3 py-2 text-[#4eff8f] focus:outline-none focus:border-[#4eff8f]"></textarea>
+        </div>
+
+        <!-- Arabic Poem -->
+        <div>
+          <label class="block text-[#22c55e] mb-1 font-bold">ARABIC POETRY (قصيدة المتنبي أو أي أبيات)</label>
+          <textarea id="editArabicPoem" rows="4" dir="rtl" class="w-full bg-[#020805] border border-[#22c55e] rounded px-3 py-2 text-[#4eff8f] font-arabic-poem text-base focus:outline-none focus:border-[#4eff8f]"></textarea>
+        </div>
+
+        <!-- Custom Portrait Uploads with Auto MGS Green Filter -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+          <div class="bg-[#020805] border border-[#09331d] rounded p-3">
+            <label class="block text-[#4eff8f] font-bold mb-1">LEFT PORTRAIT (SPEAKER)</label>
+            <p class="text-[11px] text-[#22c55e] mb-2">Default: Solid Snake CRT Green. Or upload custom photo:</p>
+            <input type="file" accept="image/*" onchange="handlePortraitUpload(event, 'snake')" class="text-xs text-[#4eff8f] w-full mb-2">
+            <button type="button" onclick="resetPortrait('snake')" class="text-[11px] text-[#ff3b3b] underline cursor-pointer">
+              Reset to Default Solid Snake
+            </button>
+          </div>
+
+          <div class="bg-[#020805] border border-[#09331d] rounded p-3">
+            <label class="block text-[#4eff8f] font-bold mb-1">RIGHT PORTRAIT (RECEIVER)</label>
+            <p class="text-[11px] text-[#22c55e] mb-2">Default: Tactical Emblem. Or upload friend's photo:</p>
+            <input type="file" accept="image/*" onchange="handlePortraitUpload(event, 'janan')" class="text-xs text-[#4eff8f] w-full mb-2">
+            <button type="button" onclick="resetPortrait('janan')" class="text-[11px] text-[#ff3b3b] underline cursor-pointer">
+              Reset to Default Emblem
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal Action Buttons -->
+        <div class="pt-4 border-t border-[#09331d] flex flex-wrap items-center justify-between gap-3">
+          <button type="button" onclick="resetAllDefaults()" class="px-3 py-2 rounded border border-[#ff3b3b]/70 text-[#ff3b3b] hover:bg-[#ff3b3b]/15 text-xs cursor-pointer">
+            ↺ RESET ALL DEFAULTS
+          </button>
+
+          <div class="flex flex-wrap items-center gap-2.5">
+            <button type="button" onclick="applyEditsAndSave()" class="px-4 py-2.5 rounded border border-[#4eff8f] bg-[#09331d] hover:bg-[#22c55e]/30 text-[#4eff8f] font-orbitron text-xs font-bold cursor-pointer">
+              ✓ APPLY &amp; PREVIEW
+            </button>
+
+            <button type="button" onclick="downloadStandaloneHTML()" class="btn-mgs px-5 py-2.5 rounded font-orbitron text-xs font-black text-[#4eff8f] cursor-pointer">
+              💾 DOWNLOAD HTML CARD
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Tactical Toast Notification -->
+  <div id="tacticalToast" class="fixed bottom-5 right-5 z-50 bg-[#04130c] border border-[#4eff8f] text-[#4eff8f] px-4 py-2.5 rounded shadow-[0_0_20px_rgba(78,255,143,0.45)] text-xs font-orbitron tracking-wider hidden">AUDIO MUTED</div>
+
+  <!-- Embedded Card Configuration State (Automatically updated when exported) -->
+  <script id="cardConfigData" type="application/json">
+{
+  "agentName": "Eng. Janan",
+  "frequency": "140.85",
+  "step1": "Eng. Janan... can you hear me?\nKept you waiting, huh? HQ has intercepted a high-priority mission for you today...",
+  "step2": "₊˚⊹♡ عيد ميلاد سعيد لمهندستي المفضلة ₊˚⊹♡\nanother year of being iconic, smart & pretty",
+  "step3": "Mission accomplished! Check the decrypted birthday archive & Al-Mutanabbi's tribute unlocked below.",
+  "englishBody": "Wishing you an extraordinary birthday filled with joy, inspiration, and unstoppable success!\nMay every project you engineer and every dream you pursue turn into a brilliant triumph.\nHere is to another year of brilliance, strength, and unforgettable victories!",
+  "arabicPoem": "بَقِيتِ بَقَاءَ الدَّهْرِ يَا كَهْفَ أَهْلِهَا\nوَهَذَا دُعَاءٌ لِلْبَرِيَّةِ شَامِلُ\nفَمَا تَبْلُغُ الأَيَّامُ مِنْكِ نِهَايَةً\nوَحُسْنُكِ فِي كُلِّ الفُصُولِ أَوَائِلُ",
+  "snakeCustomImg": "",
+  "jananCustomImg": ""
+}
+</script>
+
+  <script>
+    // =========================================================================
+    // 1. STATE MANAGEMENT, LOCAL STORAGE & CUSTOMIZATION ENGINE
+    // =========================================================================
+    const STORAGE_KEY = 'mgs_codec_birthday_config_v1';
+    let cardConfig = {};
+
+    function loadCardConfig() {
+      const embeddedScript = document.getElementById('cardConfigData');
+      let baseConfig = JSON.parse(embeddedScript.textContent.trim());
+
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          baseConfig = { ...baseConfig, ...JSON.parse(saved) };
+        }
+      } catch (e) {
+        console.warn('Local storage unavailable, using embedded config.');
+      }
+
+      cardConfig = baseConfig;
+      renderCardFromConfig();
+    }
+
+    function renderCardFromConfig() {
+      const upperName = cardConfig.agentName.toUpperCase();
+
+      // Lock screen & HUD labels
+      document.getElementById('lockAgentName').textContent = upperName;
+      document.getElementById('hudJananName').textContent = upperName;
+      document.getElementById('svgJananLabel').textContent = upperName.slice(0, 16);
+      document.getElementById('englishCardTitle').textContent = `HAPPY BIRTHDAY, ${upperName}! 🎂✨`;
+
+      // Frequencies
+      document.getElementById('lockFreqDisplay').textContent = `${cardConfig.frequency} MHz`;
+      document.getElementById('lockFreqSub').textContent = `${cardConfig.frequency} MHz`;
+      document.getElementById('hudFreqTop').textContent = cardConfig.frequency;
+      document.getElementById('hudFreqCenter').textContent = cardConfig.frequency;
+
+      // Decrypted Archive Texts
+      document.getElementById('englishCardBody').textContent = cardConfig.englishBody;
+      document.getElementById('arabicPoemDisplay').textContent = cardConfig.arabicPoem;
+
+      // Portraits (Custom uploaded image vs default MGS1 SVG)
+      const snakeSvg = document.getElementById('defaultSnakeSvg');
+      const snakeImg = document.getElementById('customSnakeImg');
+      if (cardConfig.snakeCustomImg) {
+        snakeImg.src = cardConfig.snakeCustomImg;
+        snakeImg.classList.remove('hidden');
+        snakeSvg.classList.add('hidden');
+      } else {
+        snakeImg.classList.add('hidden');
+        snakeSvg.classList.remove('hidden');
+      }
+
+      const jananSvg = document.getElementById('defaultJananSvg');
+      const jananImg = document.getElementById('customJananImg');
+      if (cardConfig.jananCustomImg) {
+        jananImg.src = cardConfig.jananCustomImg;
+        jananImg.classList.remove('hidden');
+        jananSvg.classList.add('hidden');
+      } else {
+        jananImg.classList.add('hidden');
+        jananSvg.classList.remove('hidden');
+      }
+    }
+
+    function openEditModal() {
+      document.getElementById('editAgentName').value = cardConfig.agentName;
+      document.getElementById('editFrequency').value = cardConfig.frequency;
+      document.getElementById('editStep1').value = cardConfig.step1;
+      document.getElementById('editStep2').value = cardConfig.step2;
+      document.getElementById('editStep3').value = cardConfig.step3;
+      document.getElementById('editEnglishBody').value = cardConfig.englishBody;
+      document.getElementById('editArabicPoem').value = cardConfig.arabicPoem;
+
+      document.getElementById('editModal').classList.remove('hidden');
+    }
+
+    function closeEditModal() {
+      document.getElementById('editModal').classList.add('hidden');
+    }
+
+    function handlePortraitUpload(event, target) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        // Resize image via offscreen canvas to keep exported HTML lightweight
+        const img = new Image();
+        img.onload = function () {
+          const offCanvas = document.createElement('canvas');
+          const maxDim = 320;
+          let w = img.width;
+          let h = img.height;
+          if (w > h && w > maxDim) {
+            h = Math.round((h * maxDim) / w);
+            w = maxDim;
+          } else if (h > maxDim) {
+            w = Math.round((w * maxDim) / h);
+            h = maxDim;
+          }
+          offCanvas.width = w;
+          offCanvas.height = h;
+          const offCtx = offCanvas.getContext('2d');
+          offCtx.drawImage(img, 0, 0, w, h);
+          const compressedDataUrl = offCanvas.toDataURL('image/jpeg', 0.82);
+
+          if (target === 'snake') {
+            cardConfig.snakeCustomImg = compressedDataUrl;
+          } else {
+            cardConfig.jananCustomImg = compressedDataUrl;
+          }
+          renderCardFromConfig();
+          showToast('✓ PORTRAIT APPLIED WITH MGS GREEN FILTER');
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function resetPortrait(target) {
+      if (target === 'snake') {
+        cardConfig.snakeCustomImg = '';
+      } else {
+        cardConfig.jananCustomImg = '';
+      }
+      renderCardFromConfig();
+      showToast('↺ PORTRAIT RESET TO DEFAULT');
+    }
+
+    function syncFormToConfig() {
+      cardConfig.agentName = document.getElementById('editAgentName').value.trim() || 'Eng. Janan';
+      cardConfig.frequency = document.getElementById('editFrequency').value.trim() || '140.85';
+      cardConfig.step1 = document.getElementById('editStep1').value;
+      cardConfig.step2 = document.getElementById('editStep2').value;
+      cardConfig.step3 = document.getElementById('editStep3').value;
+      cardConfig.englishBody = document.getElementById('editEnglishBody').value;
+      cardConfig.arabicPoem = document.getElementById('editArabicPoem').value;
+    }
+
+    function applyEditsAndSave() {
+      syncFormToConfig();
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(cardConfig));
+      } catch (e) {
+        console.warn('Could not persist to localStorage:', e);
+      }
+
+      renderCardFromConfig();
+      closeEditModal();
+
+      // If Codec screen is already open, refresh current step text immediately
+      if (!document.getElementById('codecScreen').classList.contains('hidden')) {
+        const steps = getDialogueSteps();
+        typeDialogueLine(steps[currentStepIndex]);
+      }
+
+      showToast('✓ CHANGES SAVED & APPLIED!');
+    }
+
+    function resetAllDefaults() {
+      try {
+        localStorage.removeItem(STORAGE_KEY);
+      } catch (e) {}
+
+      cardConfig = {
+        agentName: "Eng. Janan",
+        frequency: "140.85",
+        step1: "Eng. Janan... can you hear me?\nKept you waiting, huh? HQ has intercepted a high-priority mission for you today...",
+        step2: "₊˚⊹♡ عيد ميلاد سعيد لمهندستي المفضلة ₊˚⊹♡\nanother year of being iconic, smart & pretty",
+        step3: "Mission accomplished! Check the decrypted birthday archive & Al-Mutanabbi's tribute unlocked below.",
+        englishBody: "Wishing you an extraordinary birthday filled with joy, inspiration, and unstoppable success!\nMay every project you engineer and every dream you pursue turn into a brilliant triumph.\nHere is to another year of brilliance, strength, and unforgettable victories!",
+        arabicPoem: "بَقِيتِ بَقَاءَ الدَّهْرِ يَا كَهْفَ أَهْلِهَا\nوَهَذَا دُعَاءٌ لِلْبَرِيَّةِ شَامِلُ\nفَمَا تَبْلُغُ الأَيَّامُ مِنْكِ نِهَايَةً\nوَحُسْنُكِ فِي كُلِّ الفُصُولِ أَوَائِلُ",
+        snakeCustomImg: "",
+        jananCustomImg: ""
+      };
+
+      openEditModal();
+      renderCardFromConfig();
+      showToast('↺ RESET TO FACTORY DEFAULTS');
+    }
+
+    function downloadStandaloneHTML() {
+      syncFormToConfig();
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(cardConfig));
+      } catch (e) {}
+      renderCardFromConfig();
+
+      // Clone document and bake current cardConfig directly into #cardConfigData
+      const docClone = document.documentElement.cloneNode(true);
+      const modalInClone = docClone.querySelector('#editModal');
+      if (modalInClone) modalInClone.classList.add('hidden');
+
+      // Reset clone screen back to initial Classified Lock Screen for the recipient
+      const lockInClone = docClone.querySelector('#classifiedScreen');
+      const codecInClone = docClone.querySelector('#codecScreen');
+      if (lockInClone) lockInClone.classList.remove('hidden');
+      if (codecInClone) codecInClone.classList.add('hidden');
+
+      const configScriptInClone = docClone.querySelector('#cardConfigData');
+      if (configScriptInClone) {
+        configScriptInClone.textContent = '\n' + JSON.stringify(cardConfig, null, 2) + '\n';
+      }
+
+      const fullHtml = '<!DOCTYPE html>\n' + docClone.outerHTML;
+      const blob = new Blob([fullHtml], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+
+      const safeFileName = cardConfig.agentName.toLowerCase().replace(/[^a-z0-9]+/g, '-') || 'birthday-codec';
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `mgs-codec-${safeFileName}.html`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      showToast('💾 HTML CARD DOWNLOADED!');
+    }
+
+    // =========================================================================
+    // 2. WEB AUDIO API RETRO SYNTHESIZER (MGS1 CODEC SFX + CHIPTUNE MELODY)
+    // =========================================================================
+    let audioCtx = null;
+    let isAudioMuted = false;
+    let isMusicPlaying = false;
+    let musicLoopTimer = null;
+    let noteStep = 0;
+
+    function initAudio() {
+      if (!audioCtx) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        audioCtx = new AudioContextClass();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('tacticalToast');
+      toast.textContent = msg;
+      toast.classList.remove('hidden');
+      clearTimeout(toast._timer);
+      toast._timer = setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 2600);
+    }
+
+    function toggleAudio() {
+      initAudio();
+      isAudioMuted = !isAudioMuted;
+      const icon = document.getElementById('audioIcon');
+      const label = document.getElementById('audioLabel');
+
+      if (isAudioMuted) {
+        icon.textContent = '🔇';
+        label.textContent = 'AUDIO: OFF';
+        stopRetroMusic();
+        showToast('AUDIO MUTED');
+      } else {
+        icon.textContent = '🔊';
+        label.textContent = 'AUDIO: ON';
+        if (!document.getElementById('codecScreen').classList.contains('hidden')) {
+          startRetroMusic();
+        }
+        showToast('AUDIO ENABLED');
+      }
+    }
+
+    function playCodecRing() {
+      if (isAudioMuted) return;
+      initAudio();
+      const now = audioCtx.currentTime;
+
+      for (let burst = 0; burst < 2; burst++) {
+        const baseTime = now + burst * 0.35;
+        for (let i = 0; i < 6; i++) {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'square';
+          osc.frequency.setValueAtTime(i % 2 === 0 ? 1320 : 1760, baseTime + i * 0.04);
+
+          gain.gain.setValueAtTime(0.08, baseTime + i * 0.04);
+          gain.gain.exponentialRampToValueAtTime(0.001, baseTime + i * 0.04 + 0.036);
+
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(baseTime + i * 0.04);
+          osc.stop(baseTime + i * 0.04 + 0.038);
+        }
+      }
+    }
+
+    function ringCodecPreview() {
+      playCodecRing();
+      showToast(`📡 RINGING ${cardConfig.frequency} MHz`);
+    }
+
+    function playCodecOpenSFX() {
+      if (isAudioMuted) return;
+      initAudio();
+      const now = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+
+      osc.type = 'sawtooth';
+      osc.frequency.setValueAtTime(260, now);
+      osc.frequency.exponentialRampToValueAtTime(1240, now + 0.17);
+
+      gain.gain.setValueAtTime(0.11, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.21);
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.22);
+    }
+
+    function playTextBlip() {
+      if (isAudioMuted || !audioCtx) return;
+      const now = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(620 + Math.random() * 140, now);
+      gain.gain.setValueAtTime(0.028, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.028);
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.03);
+    }
+
+    const retroMelody = [
+      { f: 329.63, b: 164.81, d: 0.18 },
+      { f: 392.00, b: 164.81, d: 0.18 },
+      { f: 493.88, b: 196.00, d: 0.18 },
+      { f: 587.33, b: 196.00, d: 0.18 },
+      { f: 659.25, b: 246.94, d: 0.32 },
+      { f: 587.33, b: 246.94, d: 0.18 },
+      { f: 493.88, b: 196.00, d: 0.28 },
+      { f: 0,      b: 164.81, d: 0.14 },
+
+      { f: 392.00, b: 196.00, d: 0.18 },
+      { f: 392.00, b: 196.00, d: 0.14 },
+      { f: 440.00, b: 220.00, d: 0.30 },
+      { f: 392.00, b: 196.00, d: 0.30 },
+      { f: 523.25, b: 261.63, d: 0.30 },
+      { f: 493.88, b: 246.94, d: 0.45 },
+      { f: 0,      b: 196.00, d: 0.15 },
+
+      { f: 392.00, b: 196.00, d: 0.18 },
+      { f: 392.00, b: 196.00, d: 0.14 },
+      { f: 440.00, b: 220.00, d: 0.30 },
+      { f: 392.00, b: 196.00, d: 0.30 },
+      { f: 587.33, b: 293.66, d: 0.30 },
+      { f: 523.25, b: 261.63, d: 0.45 },
+      { f: 0,      b: 261.63, d: 0.15 },
+
+      { f: 659.25, b: 164.81, d: 0.22 },
+      { f: 783.99, b: 196.00, d: 0.22 },
+      { f: 659.25, b: 246.94, d: 0.22 },
+      { f: 587.33, b: 293.66, d: 0.22 },
+      { f: 493.88, b: 246.94, d: 0.36 },
+      { f: 0,      b: 164.81, d: 0.22 }
+    ];
+
+    function startRetroMusic() {
+      if (isAudioMuted || isMusicPlaying) return;
+      initAudio();
+      isMusicPlaying = true;
+      noteStep = 0;
+      scheduleNextRetroNote();
+    }
+
+    function stopRetroMusic() {
+      isMusicPlaying = false;
+      clearTimeout(musicLoopTimer);
+    }
+
+    function scheduleNextRetroNote() {
+      if (!isMusicPlaying || isAudioMuted) return;
+
+      const step = retroMelody[noteStep % retroMelody.length];
+      const now = audioCtx.currentTime;
+
+      if (step.f > 0) {
+        const leadOsc = audioCtx.createOscillator();
+        const leadGain = audioCtx.createGain();
+        leadOsc.type = 'square';
+        leadOsc.frequency.setValueAtTime(step.f, now);
+
+        leadGain.gain.setValueAtTime(0.042, now);
+        leadGain.gain.exponentialRampToValueAtTime(0.001, now + step.d * 0.92);
+
+        leadOsc.connect(leadGain);
+        leadGain.connect(audioCtx.destination);
+        leadOsc.start(now);
+        leadOsc.stop(now + step.d);
+      }
+
+      if (step.b > 0) {
+        const bassOsc = audioCtx.createOscillator();
+        const bassGain = audioCtx.createGain();
+        bassOsc.type = 'triangle';
+        bassOsc.frequency.setValueAtTime(step.b, now);
+
+        bassGain.gain.setValueAtTime(0.058, now);
+        bassGain.gain.exponentialRampToValueAtTime(0.001, now + step.d * 0.95);
+
+        bassOsc.connect(bassGain);
+        bassGain.connect(audioCtx.destination);
+        bassOsc.start(now);
+        bassOsc.stop(now + step.d);
+      }
+
+      noteStep++;
+      musicLoopTimer = setTimeout(scheduleNextRetroNote, step.d * 1000);
+    }
+
+    // =========================================================================
+    // 3. CODEC MULTI-STEP DIALOGUE & TYPEWRITER FLOW
+    // =========================================================================
+    let currentStepIndex = 0;
+    let typingInterval = null;
+    let signalMeterInterval = null;
+
+    function getDialogueSteps() {
+      return [
+        cardConfig.step1,
+        cardConfig.step2,
+        cardConfig.step3
+      ];
+    }
+
+    function acceptTransmission() {
+      initAudio();
+      playCodecOpenSFX();
+
+      document.getElementById('classifiedScreen').classList.add('hidden');
+      document.getElementById('codecScreen').classList.remove('hidden');
+
+      const badge = document.getElementById('statusBadge');
+      badge.textContent = 'LINK ACTIVE';
+      badge.className = 'px-2.5 py-1 rounded bg-[#4eff8f]/20 border border-[#4eff8f] text-[#4eff8f] text-[11px] font-bold tracking-widest';
+
+      startRetroMusic();
+      startSignalMeter();
+
+      currentStepIndex = 0;
+      const steps = getDialogueSteps();
+      typeDialogueLine(steps[0]);
+      triggerCelebrationBurst();
+    }
+
+    function typeDialogueLine(text) {
+      clearInterval(typingInterval);
+      const textEl = document.getElementById('codecDialogueText');
+      const indicatorEl = document.getElementById('dialogueStepIndicator');
+      const speakerWrapper = document.getElementById('snakePortraitWrapper');
+      const nextBtn = document.getElementById('nextDialogueBtn');
+      const steps = getDialogueSteps();
+
+      indicatorEl.textContent = `STEP ${currentStepIndex + 1} / ${steps.length}`;
+      textEl.textContent = '';
+      speakerWrapper.classList.add('snake-talking');
+
+      if (currentStepIndex === steps.length - 1) {
+        nextBtn.textContent = 'START OVER ↺';
+      } else {
+        nextBtn.textContent = 'NEXT ▶';
+      }
+
+      // Use Array.from so Unicode emojis/symbols (₊˚⊹♡) render cleanly char-by-char
+      const chars = Array.from(text);
+      let idx = 0;
+
+      typingInterval = setInterval(() => {
+        if (idx < chars.length) {
+          textEl.textContent += chars[idx];
+          if (idx % 3 === 0) playTextBlip();
+          idx++;
+        } else {
+          clearInterval(typingInterval);
+          speakerWrapper.classList.remove('snake-talking');
+        }
+      }, 26);
+    }
+
+    function nextDialogueStep() {
+      playCodecOpenSFX();
+      const steps = getDialogueSteps();
+      currentStepIndex = (currentStepIndex + 1) % steps.length;
+      typeDialogueLine(steps[currentStepIndex]);
+
+      if (currentStepIndex === 1 || currentStepIndex === 2) {
+        triggerCelebrationBurst();
+      }
+    }
+
+    function replayTransmission() {
+      playCodecOpenSFX();
+      currentStepIndex = 0;
+      typeDialogueLine(getDialogueSteps()[0]);
+      showToast('↻ REPLAYING CODEC');
+    }
+
+    function startSignalMeter() {
+      clearInterval(signalMeterInterval);
+      const bars = document.querySelectorAll('.signal-bar');
+      signalMeterInterval = setInterval(() => {
+        bars.forEach((bar) => {
+          const isSpeaking = document.getElementById('snakePortraitWrapper').classList.contains('snake-talking');
+          const minH = isSpeaking ? 25 : 12;
+          const maxH = isSpeaking ? 96 : 45;
+          const height = isAudioMuted ? 10 : Math.floor(minH + Math.random() * (maxH - minH));
+          bar.style.height = `${height}%`;
+        });
+      }, 95);
+    }
+
+    // =========================================================================
+    // 4. TACTICAL RADAR CANVAS & PHOSPHOR PARTICLE CELEBRATION
+    // =========================================================================
+    const canvas = document.getElementById('radarCanvas');
+    const ctx = canvas.getContext('2d');
+    let radarAngle = 0;
+    let particles = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function triggerCelebrationBurst() {
+      if (!isAudioMuted && audioCtx) {
+        const now = audioCtx.currentTime;
+        [523.25, 659.25, 783.99, 1046.5].forEach((freq, idx) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'square';
+          osc.frequency.setValueAtTime(freq, now + idx * 0.065);
+          gain.gain.setValueAtTime(0.045, now + idx * 0.065);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.065 + 0.22);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now + idx * 0.065);
+          osc.stop(now + idx * 0.065 + 0.24);
+        });
+      }
+
+      const cx = canvas.width / 2;
+      const cy = canvas.height / 2;
+      const shades = ['#4eff8f', '#22c55e', '#86efac', '#ffffff'];
+
+      for (let i = 0; i < 60; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = 1.6 + Math.random() * 5.2;
+        particles.push({
+          x: cx,
+          y: cy,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          life: 1.0,
+          decay: 0.013 + Math.random() * 0.015,
+          size: 2 + Math.random() * 3,
+          color: shades[Math.floor(Math.random() * shades.length)]
+        });
+      }
+    }
+
+    function animateRadar() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      const cx = canvas.width / 2;
+      const cy = canvas.height / 2;
+      const maxR = Math.min(cx, cy) * 0.85;
+
+      ctx.strokeStyle = 'rgba(34, 197, 94, 0.14)';
+      ctx.lineWidth = 1;
+      for (let r = 1; r <= 3; r++) {
+        ctx.beginPath();
+        ctx.arc(cx, cy, (maxR / 3) * r, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      radarAngle += 0.012;
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(radarAngle);
+      const grad = ctx.createLinearGradient(0, 0, maxR, 0);
+      grad.addColorStop(0, 'rgba(78, 255, 143, 0.22)');
+      grad.addColorStop(1, 'rgba(78, 255, 143, 0)');
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.lineTo(maxR, 0);
+      ctx.stroke();
+      ctx.restore();
+
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.life -= p.decay;
+        if (p.life <= 0) {
+          particles.splice(i, 1);
+          continue;
+        }
+        ctx.globalAlpha = p.life;
+        ctx.fillStyle = p.color;
+        ctx.fillRect(p.x, p.y, p.size, p.size);
+      }
+      ctx.globalAlpha = 1.0;
+
+      requestAnimationFrame(animateRadar);
+    }
+
+    window.onload = function () {
+      loadCardConfig();
+      animateRadar();
+    };
+  </script>
+
+</body></html>
